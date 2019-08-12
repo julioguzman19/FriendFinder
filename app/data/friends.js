@@ -1,3 +1,11 @@
+const userArray = [
+  {
+    name: "name",
+    question1: "question1",
+    question2: "question2"
+  }
+]
+
 let matches = [
     {
     "name":"Ahmed",
@@ -51,3 +59,4 @@ let matches = [
 
 ];
   
+module.exports = userArray;
