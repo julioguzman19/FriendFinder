@@ -52,7 +52,9 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
+
                     <br></br>
+
                     <h2><strong>Question 2</strong></h2>
                     <h4>You love to eat?</h4>
 
@@ -64,7 +66,121 @@
                         <option value="4">4</option>
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
+
                     <br></br>
+
+                    <h2><strong>Question 3</strong></h2>
+                    <h4>You love being outdoors?</h4>
+
+                    <select class="chosen-select" id="q3">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 4</strong></h2>
+                    <h4>You love to learn?</h4>
+
+                    <select class="chosen-select" id="q4">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 5</strong></h2>
+                    <h4>You love to laugh?</h4>
+
+                    <select class="chosen-select" id="q5">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 6</strong></h2>
+                    <h4>You love sports?</h4>
+
+                    <select class="chosen-select" id="q6">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 7</strong></h2>
+                    <h4>You love the summer?</h4>
+
+                    <select class="chosen-select" id="q7">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 8</strong></h2>
+                    <h4>You love the winter?</h4>
+
+                    <select class="chosen-select" id="q8">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 9</strong></h2>
+                    <h4>You love to workout?</h4>
+
+                    <select class="chosen-select" id="q9">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+
+                    <h2><strong>Question 10</strong></h2>
+                    <h4>You love to code?</h4>
+
+                    <select class="chosen-select" id="q10">
+                        <option value = ""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <br></br>
+                    
                 </div>
                 
                 <!-- Submit Button -->
@@ -86,13 +202,22 @@
       event.preventDefault();
   
       // Grabbing the form elements
-      var userInput = {
+      let userInput = {
         name: $("#name").val().trim(),
-        question1: $("#q1").val().trim(),
-        question2: $("#q2").val().trim()
+        photo: $("#photo").val().trim(),
+        question1: parseInt($("#q1").val().trim()),
+        question2: parseInt($("#q2").val().trim()),
+        question3: parseInt($("#q3").val().trim()),
+        question4: parseInt($("#q4").val().trim()),
+        question5: parseInt($("#q5").val().trim()),
+        question6: parseInt($("#q6").val().trim()),
+        question7: parseInt($("#q7").val().trim()),
+        question8: parseInt($("#q8").val().trim()),
+        question9: parseInt($("#q9").val().trim()),
+        question10: parseInt($("#q10").val().trim())
       };
   
-      console.log(userInput);
+      console.log(userInput.name);
   
       // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
       // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
