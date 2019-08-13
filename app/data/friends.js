@@ -8,123 +8,91 @@ const userArray = [
 
 let matches = [
   {
-    "name": "Ahmed",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Blake Lovely",
+    "photo": "https://github.com/julioguzman19/FriendFinder/blob/master/app/images/blake%20lively%20blake%20tired.jpg",
     "scores": [
       5,
-      1,
-      4,
-      4,
       5,
-      1,
+      5,
       2,
-      5,
+      2,
+      2,
+      2,
+      4,
       4,
       1
     ]
   },
 
   {
-    "name": "Alexa",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores": [
-      1,
-      1,
-      4,
-      4,
-      5,
-      1,
-      2,
-      5,
-      4,
-      1
-    ]
-  },
-
-  {
-    "name": "Rihanna",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Elon Powers",
+    "photo": "https://github.com/julioguzman19/FriendFinder/blob/master/app/images/elon.jpg",
     "scores": [
       3,
-      1,
-      4,
-      4,
       5,
-      1,
       2,
       5,
-      4,
-      1
+      2,
+      2,
+      2,
+      2,
+      3,
+      5
     ]
   },
 
   {
-    "name": "Alexa",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Kobe Smiles",
+    "photo": "https://github.com/julioguzman19/FriendFinder/blob/master/app/images/kobe%20320x180.jpg",
     "scores": [
-      1,
-      1,
-      4,
-      4,
-      5,
-      1,
+      3,
+      2,
+      2,
       2,
       5,
-      4,
-      1
+      2,
+      5,
+      2,
+      2,
+      2
     ]
   },
 
   {
-    "name": "Alexa",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Priyanka Sitter",
+    "photo": "https://github.com/julioguzman19/FriendFinder/blob/master/app/images/priyanka.jpg",
     "scores": [
-      1,
-      1,
-      4,
-      4,
-      5,
-      1,
+      3,
       2,
       5,
-      4,
-      1
+      2,
+      3,
+      5,
+      5,
+      2,
+      2,
+      2
     ]
   },
 
   {
-    "name": "Alexa",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Taylor Kitten",
+    "photo": "https://github.com/julioguzman19/FriendFinder/blob/master/app/images/taylor.jpg",
     "scores": [
-      1,
-      1,
-      4,
-      4,
       5,
-      1,
+      2,
+      2,
+      2,
+      2,
+      2,
       2,
       5,
-      4,
-      1
-    ]
-  },
-
-  {
-    "name": "Alexa",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    "scores": [
-      1,
-      1,
-      4,
-      4,
       5,
-      1,
-      2,
-      5,
-      4,
-      1
+      2
     ]
   }
+
+  
 ];
   
 module.exports = userArray;
