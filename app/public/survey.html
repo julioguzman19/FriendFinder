@@ -216,8 +216,11 @@
         question9: parseInt($("#q9").val().trim()),
         question10: parseInt($("#q10").val().trim())
       };
-  
-      console.log(userInput.name);
+      
+      for(var i=2 in userInput){
+        console.log(userInput[i]);
+      }
+      
   
       // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
       // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
