@@ -198,6 +198,8 @@
     // API recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js)
     // In this case the associated code "saves" the data to the friends.js
   
+    let userAnswers = [];
+
     $(".submit").on("click", function(event) {
       event.preventDefault();
   
@@ -216,10 +218,11 @@
         question9: parseInt($("#q9").val().trim()),
         question10: parseInt($("#q10").val().trim())
       };
-      
-      for(var i=2 in userInput){
-        console.log(userInput[i]);
+      //storing all of user answers in array
+      for(var key in userInput){
+        userAnswers.push(userInput[key]);
       }
+      console.log(userAnswers);
       
   
       // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
