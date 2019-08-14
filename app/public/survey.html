@@ -222,23 +222,17 @@
       for(var key in userInput){
         userAnswers.push(userInput[key]);
       }
-      console.log(userAnswers);
-      
-  
-      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-  
- /*      $.post("/api/tables", userInput,
-        function(data) {
-  
-          // Clear the form when submitting
-          $("#reserve-name").val("");
-          $("#reserve-phone").val("");
-          $("#reserve-email").val("");
-          $("#reserve-unique-id").val("");
-  
-        }); */
-  
+
+      $.post("/api/friends", userInput,
+      function(data){
+          console.log(data);
+      })
+
+
+
     });
+
+
+
   
   </script>

@@ -1,12 +1,5 @@
-const userArray = [
-  {
-    name: "name",
-    question1: "question1",
-    question2: "question2"
-  }
-]
-
-let matches = [
+//for photo just use name of image then when returning refer to path plus the name of image
+const matches = [
   {
     "name": "Blake Lovely",
     "photo": "https://github.com/julioguzman19/FriendFinder/blob/master/app/images/blake%20lively%20blake%20tired.jpg",
@@ -95,4 +88,4 @@ let matches = [
   
 ];
   
-module.exports = userArray;
+module.exports = matches;
